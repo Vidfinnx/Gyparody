@@ -1,0 +1,369 @@
+/* CSS Reset Trick */
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+  /* Button Highlighted Outline Removed */
+  *:focus {
+    outline: 0 !important;
+}
+
+/* Initals Form Group Block */
+.form-group {
+  background: blue;
+  color: white;
+  font-family: 'arial';
+  font-size: 2rem;
+  width: 82%;
+  margin: 0 auto;
+}
+
+/* Input Box Sizing */
+.form-control {
+  font-size: 2rem;
+  width: 14%;
+}
+
+/* Page Background Image */
+  body{
+    background-image:url("./images/Jback.jfif");
+  }
+
+  /* Custom Jeopardy font Gyparody! */
+  @font-face {
+    font-family: "Jeop";
+    src: url("./font/gyparody.ttf");
+  }
+
+  /* Quiz Button Styling */
+  .quizbuttons {
+    display: flex;
+    flex-basis: 44%;
+    flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+}
+  /* Container that contains body display elements */
+  .container {
+    margin-left: auto;
+    margin-top: 10rem;
+    max-width: 800px;
+    width: 80%;
+    margin-right: auto;
+}
+
+/* Buttons On Leaderboard Positioning */
+.buttonfoot {
+  margin-left:27%;
+}
+
+/* Titlescreen Div Styling */
+#titleScreen {
+  text-align: center;
+  margin: auto;
+  position: relative;
+  animation-name: title-slide-out;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-duration: 0.40s;
+  animation-play-state: paused;
+  color:white;
+  
+}
+
+/* P tag text styling */
+p {
+  background: blue;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  max-width: 31rem;
+  font-size: 2rem;
+}
+
+/* H2 tag text styling */
+h2 {
+  background: blue;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  max-width: 31rem;
+  font-size: 2rem;
+  text-align:center
+}
+
+/* Set question block initial display to none */
+#questionBlock {
+  display: none;
+  text-align: left;
+  margin: auto;
+  position: relative;
+}
+
+/*Set endgameblock initial display to none */
+#endGameBlock {
+  display: none;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+/* Answer Block Styling */
+#answerResult {
+  position: fixed;
+  font-size: 105pt;
+  color: white;
+  font-weight: bold;
+  margin-left: -19%;
+  background: blue;
+}
+
+/* Score Styling */
+#showScore {
+  line-height: 0.8;
+  font-size: 8em;
+  font-weight: bolder;
+  color: white;
+  background: blue;
+  width: 31rem;
+  margin: auto;
+  padding-bottom: 1re;
+}
+
+/* Alert Popup Styling */
+.alert {
+  margin: auto;
+  margin-top: 15px;
+  max-width: 400px;
+  background: red;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+/* H1 tag styling */
+h1 {
+  margin-top: -8rem;
+  margin-bottom: 88px;
+  font-family: "Jeop";
+  font-size: 12rem;
+  color: white;
+  text-align: center;
+  background: blue;
+}
+
+/* Nav element styling */
+nav {
+  display: flex;
+  background: blue;
+  color: white;
+  font-size: 6rem;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: -60px;
+  margin-top: 55px;
+  margin-bottom: -106px;
+  width: 100%;
+  font-family: 'impact';
+}
+
+/* Leaderboard color styling */
+.scoreStyle {
+  padding: 3px 3px 3px 10px;
+  font-size: 16pt;
+  background-color:blue;
+  color:white;
+}
+
+/* Button styling */
+.btn-primary {
+  background: blue;
+  border-color: black;
+  color: white;
+  font-family:'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  height: 5rem;
+  width: 15rem;
+  font-size: 2rem;
+  height:5.5rem;
+}
+
+/* Button hover styling */
+.btn-primary:hover {
+  background-color: #ff0000;
+  border-color: #000000;
+}
+
+/* Button disabled styling */
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  background: #800080;
+  border-color: #000000;
+}
+
+
+/* Animation attributes*/
+.answerSlideUp {
+  animation-name: answer-slide-up;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-duration: 0.30s;
+}
+
+.slideUp {
+  animation-name: slide-up;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 0.50s;
+}
+
+.slideDown {
+  animation-name: slide-down;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 0.70s;
+}
+
+.questionFadeOut {
+  animation-name: quiz-fade-out;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.30s;
+}
+
+.questionFadeIn {
+  animation-name: quiz-fade-in;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.30s;
+}
+
+.fadeInOut {
+  animation-name: fade-in-out;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.00s;
+}
+
+.fadeAway {
+  animation-name: fade-away;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.30s;
+}
+
+@keyframes title-slide-out {
+  0% {
+      bottom: 0;
+      opacity: 1;
+  }
+  100% {
+      bottom: 300px;
+      opacity: 0;
+  }
+}
+
+@keyframes answer-slide-up {
+  0% {
+      bottom: 30%;
+      opacity: 0;
+  }
+  100% {
+      bottom: 50%;
+      opacity: 1;
+  }
+}
+
+@keyframes fade-in-out {
+  0% {
+      opacity: 0;
+  }
+  30% {
+      opacity: 1;
+  }
+  70% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+@keyframes fade-away {
+  0% {
+      bottom: 50%;
+      opacity: 1;
+  }
+  100% {
+      bottom: 50%;
+      opacity: 0;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+      top: 200px;
+      opacity: 0;
+  }
+  100% {
+      top: 0;
+      opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+      bottom: 100px;
+      opacity: 0;
+  }
+  100% {
+      bottom: 0;
+      opacity: 1;
+  }
+}
+
+@keyframes quiz-fade-out {
+  0% {
+      right: 0;
+      opacity: 1;
+  }
+  100% {
+      right: 200px;
+      opacity: 0;
+  }
+}
+
+@keyframes quiz-fade-in {
+  0% {
+      left: 200px;
+      opacity: 0;
+  }
+  100% {
+      left: 0;
+      opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  @keyframes answer-slide-up {
+      0% {
+          bottom: 0;
+          opacity: 0;
+      }
+      100% {
+          bottom: 20%;
+          opacity: 1;
+      }
+  }
+  
+  @keyframes fade-away {
+      0% {
+          bottom: 20%;
+          opacity: 1;
+      }
+      100% {
+          bottom: 20%;
+          opacity: 0;
+      }
+  }
+}

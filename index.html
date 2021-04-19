@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Gyparody!</title>
+</head>
+
+<body>
+    <nav class="navbar">
+       <span class="navbar-text"></span>
+    </nav>
+    <div class="container">
+        <div id="titleScreen">
+            <h1>Gyparody!</h1>
+            <p>
+               Do you know the answers to this quiz? 
+               Mr.Trebek Knows... Money is Time here!
+               For every wrong answer your money will decrease!
+               How much can you earn? Earn your place with the champions!
+               </p>
+               <br>
+            <button class="btn btn-primary" id="quizStart">Lets Play Gyparody!</button>
+           
+        </div>
+
+        <div id="questionBlock">
+            <h2 id="questionPrompt">
+            </h2>
+            <br>
+            <br>
+            <div class="quizbuttons">
+            <button class="btn btn-primary btn-sm btnOption" id="quizOption1"></button>
+            <button class="btn btn-primary btn-sm btnOption" id="quizOption2"></button>
+            <button class="btn btn-primary btn-sm btnOption" id="quizOption3"></button>
+            <button class="btn btn-primary btn-sm btnOption" id="quizOption4"></button>
+        </div>
+    </div>
+
+        <div id="answerResult"></div>
+
+        <div id="endGameBlock">
+            <h1>Game Over</h1>
+            <p>Your final earnings are:</p>
+            <h3 id="showScore"></h3>
+            <br>
+            <form id="submitInitials" onSubmit="return false;">
+                
+                <div class="form-group">
+                    <label for="inputInitials">Enter Your Initials:</label>
+                    <input type="text" class="form-control" id="playerInitials" value="">
+                </div>
+                
+            </form>
+            
+            <div class="alert" id="alertBox" style="display: none;">
+                Please enter your initials!
+            </div>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+        </div> 
+       
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
