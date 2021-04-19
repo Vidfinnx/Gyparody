@@ -28,4 +28,5 @@ His project provided alot of code framework which was used to form this project.
 
 link to game : https://vidfinnx.github.io/Gyparody/
 
+![Gyp](https://user-images.githubusercontent.com/79023746/115193743-69caa880-a0a1-11eb-823f-1095af439617.png)
 
