@@ -1,5 +1,5 @@
 # Gyparody
-Gyparody Quiz Gam
+Gyparody Quiz Game
 
 I had to make this Quiz Game for my coding class
 
